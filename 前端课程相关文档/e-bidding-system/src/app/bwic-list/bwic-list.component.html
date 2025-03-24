@@ -1,0 +1,119 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <app-bwic-list-filter></app-bwic-list-filter>
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">BWIC Publish List</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 10px">#</th>
+                                        <th>Cusip</th>
+                                        <th>Due Date</th>
+                                        <th>Position</th>
+                                        <th>Market Price($)</th>
+                                        <th>Starting Market Value($)</th>
+                                        <th>NO. of Bids</th>
+                                        <th>My Ranking</th>
+                                        <th>My Bid Market Value($)</th>
+                                        <th style="width: 260px">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>1234abcd</td>
+                                        <td>2023-3-2</td>
+                                        <td>3</td>
+                                        <td>100</td>
+                                        <td>300</td>
+                                        <td>10</td>
+                                        <td>2/10</td>
+                                        <td>400</td>
+                                        <td>
+                                            <span><a href="" data-toggle="modal"
+                                                    data-target="#modal-update">Update</a></span>&nbsp;&nbsp;
+                                            <span><a href="" data-toggle="modal"
+                                                    data-target="#modal-cancel">Cancel</a></span>&nbsp;&nbsp;
+                                            <span><a href="" data-toggle="modal" data-target="#modal-viewBid">View
+                                                    Bids</a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>1234abcd</td>
+                                        <td>2023-1-2</td>
+                                        <td>3</td>
+                                        <td>100</td>
+                                        <td>300</td>
+                                        <td>10</td>
+                                        <td>2/10</td>
+                                        <td>400</td>
+                                        <td><span class="badge bg-success">Winner: User1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>1234abcd</td>
+                                        <td>2023-1-2</td>
+                                        <td>3</td>
+                                        <td>100</td>
+                                        <td>300</td>
+                                        <td>10</td>
+                                        <td>2/10</td>
+                                        <td>400</td>
+                                        <td><span class="badge bg-success">Winner: User2</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td>1234abcd</td>
+                                        <td>2023-1-2</td>
+                                        <td>3</td>
+                                        <td>100</td>
+                                        <td>300</td>
+                                        <td>10</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>
+                                            <span><a href="" data-toggle="modal"
+                                                    data-target="#modal-add">Bid</a></span>&nbsp;&nbsp;
+                                            <span><a href="" data-toggle="modal" data-target="#modal-viewBid">View
+                                                    Bids</a></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                        <!-- <div class="card-footer clearfix">
+                            <ul class="pagination pagination-sm m-0 float-right">
+                                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<app-bwic-bid-add></app-bwic-bid-add>
+<app-bwic-bid-view></app-bwic-bid-view>
+<app-bwic-bid-update></app-bwic-bid-update>
+<app-bwic-bid-cancel></app-bwic-bid-cancel>
